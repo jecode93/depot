@@ -1,0 +1,7 @@
+<div id="<%= dom_id cart %>">
+  <ul class="list-disc list-inside">
+    <% cart.line_items.each do |item| %>
+    <li><%= item.product.title %></li>
+    <% end %>
+  </ul>
+</div>

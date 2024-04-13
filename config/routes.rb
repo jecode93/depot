@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
   # Defines the root path route ("/")
   root "store#index", as: "store_index"
   
